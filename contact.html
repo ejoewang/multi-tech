@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | MULTI TECH</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+    <div class="logo">MULTI TECH</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="cta">
+        <a href="contact.html">Request Service</a>
+    </div>
+</nav>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>We’re here to help. Get in touch with MULTI TECH through any of the options below.</p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-page">
+
+        <div class="contact-container">
+
+            <!-- WHATSAPP -->
+            <div class="contact-card">
+                <h3>WhatsApp</h3>
+                <p>Click below to chat with us directly:</p>
+                <a href="https://wa.me/237674200065?text=Hello%20MULTI%20TECH,%20I%20want%20to%20request%20a%20service" 
+                   target="_blank" class="btn-primary">Chat on WhatsApp</a>
+            </div>
+
+            <!-- PHONE -->
+            <div class="contact-card">
+                <h3>Phone</h3>
+                <p>Call us directly:</p>
+                <a href="tel:+237670922164" class="btn-primary">Call Now</a>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="contact-card">
+                <h3>Email</h3>
+                <p>Send us an email:</p>
+                <a href="mailto:youremail@example.com" class="btn-primary">Send Email</a>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <div class="contact-card">
+                <h3>Contact Form</h3>
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <input type="text" id="service" name="service" placeholder="Service You Want" required>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" class="btn-primary">Send via WhatsApp</button>
+                </form>
+            </div>
+
+            <!-- BOOKING SYSTEM -->
+            <div class="contact-card">
+                <h3>Book a Service</h3>
+                <form id="booking-form">
+                    <input type="text" id="bname" placeholder="Your Name" required>
+                    <input type="email" id="bemail" placeholder="Your Email" required>
+                    <input type="text" id="bservice" placeholder="Service Needed" required>
+                    <label for="bdate">Preferred Date:</label>
+                    <input type="date" id="bdate" required>
+                    <label for="btime">Preferred Time:</label>
+                    <input type="time" id="btime" required>
+                    <button type="submit" class="btn-primary">Book Now</button>
+                </form>
+            </div>
+
+            <!-- PHYSICAL LOCATION -->
+            <div class="contact-card">
+                <h3>Our Location</h3>
+                <p>MULTI TECH Office, Your City, Cameroon</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>MULTI TECH</h3>
+                <p>EWANG'S MULTI TECH provides reliable technology solutions including computer repair, phone repair, networking, CCTV installation and web development.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4>Services</h4>
+                <ul>
+                    <li>Computer Repair</li>
+                    <li>Phone Repair</li>
+                    <li>Web Development</li>
+                    <li>CCTV Installation</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 MULTI TECH | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons + AI -->
+    <a href="https://wa.me/237674200065" class="whatsapp-float" target="_blank">Chat on WhatsApp</a>
+    <div class="chat-toggle">💬</div>
+    <div class="chatbox">
+        <div class="chat-header">MULTI TECH Assistant</div>
+        <div class="chat-body" id="chat-body">
+            <p><strong>Assistant:</strong> Hello! How can I help you?</p>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="js/contact.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/ai-assistant.js"></script>
+
+</body>
+</html>
