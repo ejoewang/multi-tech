@@ -1,0 +1,57 @@
+/* styling for Mobile Responsive Design*/
+/* TABLETS */
+
+@media (max-width: 992px){
+
+    .services-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .portfolio-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .testimonial-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .services-container{
+        grid-template-columns:1fr;
+    }
+
+    .portfolio-container{
+        grid-template-columns:1fr;
+    }
+
+    .why-container{
+        grid-template-columns:1fr;
+    }
+
+    .testimonial-container{
+        grid-template-columns:1fr;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+}
