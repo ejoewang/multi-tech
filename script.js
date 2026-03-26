@@ -46,3 +46,30 @@ navLinks.forEach(link => {
         link.classList.add("active");
     }
 });
+
+// FIXING FOR IMAGE NOT CHANGE ON STORE
+
+document.querySelectorAll('.product-card').forEach(card => {
+    const images = card.querySelectorAll('.product-images img');
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            images.forEach(i => i.classList.remove('active'));
+            img.classList.add('active');
+        });
+    });
+});
+
+document.querySelectorAll('.product-card').forEach(card => {
+    const images = card.querySelectorAll('.product-carousel img');
+    let index = 0;
+
+    if (images.length > 0) {
+        images[0].classList.add('active');
+
+        setInterval(() => {
+            images[index].classList.remove('active');
+            index = (index + 1) % images.length;
+            images[index].classList.add('active');
+        }, 3000); // change every 3 seconds
+    }
+});
