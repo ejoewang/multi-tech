@@ -558,3 +558,14 @@ body {
         height: 60px;
     }
 }
+
+
+/* GLOBAL SPACING FIX */
+.container,
+.products,
+.page-header,
+.contact,
+.section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
