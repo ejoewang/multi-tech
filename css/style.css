@@ -591,3 +591,25 @@ body {
 body {
     padding-bottom: 80px;
 }
+
+@media (max-width: 768px) {
+
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cta-buttons a {
+        width: 100%;
+    }
+}
+
+.product-card,
+.contact-card {
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 30px;
+}
