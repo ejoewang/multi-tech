@@ -578,3 +578,16 @@ body {
     max-width: 600px;
     margin: 0 auto;
 }
+
+/* Floating WhatsApp button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 1000;
+}
+
+/* Prevent content from being hidden behind it */
+body {
+    padding-bottom: 80px;
+}
