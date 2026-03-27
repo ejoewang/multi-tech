@@ -613,3 +613,132 @@ body {
 section {
     margin-bottom: 30px;
 }
+
+
+/* NEW FIX, BUT THE OLD FIX CAN BE DELETED DEPENDING*/
+
+/* ==========================
+   ✅ FIX: NAVBAR MOBILE
+========================== */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+}
+
+/* ==========================
+   ✅ FIX: IMAGE SYSTEM (WORKS WITH YOUR JS SLIDER)
+========================== */
+
+/* Ensure carousel works */
+.product-carousel {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.product-carousel img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.product-carousel img.active {
+    display: block;
+}
+
+/* Keep thumbnails usable */
+.product-images img {
+    cursor: pointer;
+}
+
+/* ==========================
+   ✅ FIX: SPACING CLEANUP (WITHOUT BREAKING DESIGN)
+========================== */
+
+.products,
+.store,
+.contact-page,
+.services,
+.portfolio,
+.why-us,
+.testimonials {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Center long text nicely */
+.page-header p,
+.store-preview p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ==========================
+   ✅ FIX: BUTTON STACKING (MOBILE)
+========================== */
+@media (max-width: 768px) {
+
+    .hero-buttons,
+    .contact-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .hero-buttons a,
+    .contact-buttons a {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+}
+
+/* ==========================
+   ✅ FIX: WHATSAPP OVERLAP
+========================== */
+
+body {
+    padding-bottom: 100px; /* prevents overlap */
+}
+
+.whatsapp-float {
+    bottom: 15px;
+    right: 10px;
+}
+
+/* ==========================
+   ✅ FIX: CARD CONSISTENCY
+========================== */
+
+.product-card,
+.contact-card {
+    margin-bottom: 15px;
+}
+
+/* ==========================
+   ✅ FIX: IMAGE RESPONSIVENESS
+========================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
